@@ -6,7 +6,6 @@ This project implements a real-time dynamic pricing system for urban parking lot
 
 1. **Baseline Linear Model**: A simple model based on occupancy and capacity
 2. **Demand-Based Model**: An advanced model incorporating occupancy volatility, traffic conditions, and special days
-3. **Competitive Pricing Model**: The most sophisticated model that also considers competitor pricing
 
 The goal is to create a more efficient parking system by adjusting prices dynamically to reflect current demand and market conditions, ultimately optimizing revenue and resource utilization.
 
@@ -42,19 +41,15 @@ graph TD
     
     D --> E1[Model 1: Baseline Linear];
     D --> E2[Model 2: Demand-Based];
-    D --> E3[Model 3: Competitive Pricing];
     
     E1 --> F1[Price Table 1];
     E2 --> F2[Price Table 2];
-    E3 --> F3[Price Table 3];
     
     F1 --> G1[Bokeh Visualization 1];
     F2 --> G2[Bokeh Visualization 2];
-    F3 --> G3[Bokeh Visualization 3];
     
     G1 --> H[Interactive Dashboard];
     G2 --> H;
-    G3 --> H;
 ```
 
 **Workflow Explanation:**
