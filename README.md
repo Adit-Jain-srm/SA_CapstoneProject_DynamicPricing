@@ -65,7 +65,6 @@ graph TD
 5. **Multi-Model Pricing Logic**: Three pricing models with increasing sophistication are applied:
    - **Model 1 (Baseline)**: `price = base_price * (1 + current_occupancy/capacity)`
    - **Model 2 (Demand-Based)**: Incorporates occupancy volatility, traffic conditions, and special day factors
-   - **Model 3 (Competitive)**: Adds competitor pricing analysis to the demand-based model
 
 6. **Real-time Visualization**: Each pricing model's results are streamed to separate Bokeh plots, which update in real-time to show price fluctuations. These visualizations are combined into an interactive dashboard for easy comparison.
 
@@ -109,7 +108,7 @@ graph TD
 
 ```
 ├── README.md                         # Project documentation
-├── SA2025_DynamicPricing_Solution.ipynb  # Main Jupyter notebook with implementation
+├── SA2025_Final_Notebook_With_Visuals.ipynb  # Main Jupyter notebook with implementation
 ├── dataset.csv                       # Sample parking data for simulation
 ├── problem statement.pdf             # Original project requirements
 └── requirements.txt                  # Dependencies for the project
